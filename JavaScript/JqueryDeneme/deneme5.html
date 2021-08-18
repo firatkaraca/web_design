@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button>Add and remove a property</button>
+    <div></div>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var $x=$("div");
+                $x.prop("color","#FF0000");
+                $x.append("<br>The color property has he following value : " +$x.prop("color"));
+                $x.removeProp("color");
+                $x.append("<br> Now the color property has he the following value : "+$x.prop("color"));
+            });
+        });
+    </script> -->
+
+
+    <p><b>Note:</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ipsum?</p>
+    <button>Lorem ipsum dolor sit amet.</button>
+    <br><br>
+
+    <input type="checkbox" id="check1" checked="checked">
+    <label for="check1">Check me</label>
+    <p id="p1"></p>
+
+    <div></div>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#p1").html("attr('checked'):"+$("input").attr('checked')+"<br>prop('checked'):"+$("input").prop('checked'));
+            });
+        });
+    </script>
+
+</body>
+</html>

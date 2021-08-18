@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <style>
+        p{
+            margin: 8px;
+            font-size: 20px;
+            color: blue;
+            cursor: pointer;
+        }
+        b{
+            text-decoration: underline;
+        }
+        button{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <b>Click</b> to change <span id="tag">html</span>
+    </p>
+    <p>
+        to a <span id="text">text</span> node.
+    </p>
+    <p>
+        This <button name="nada">button</button> does nothing
+    </p>
+
+    <script>
+        $("p").click(function(){
+            var htmlString=$(this).html();
+            $(this).text(htmlString);
+        })
+    </script>
+</body>
+</html>

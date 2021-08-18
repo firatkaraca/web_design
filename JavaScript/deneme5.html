@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <style>
+        .table_style {
+            width: 500px;
+            margin: 0px auto;
+        }
+
+        table {
+            width: 100%;
+            text-align: center;
+        }
+
+        table tr td {
+            width: 50%;
+            border: 1px solid red;
+            padding: 10px;
+        }
+
+        table tr th {
+            border: 1px solid blue;
+            padding: 10px;
+        }
+
+        .zebra {
+            background-color: #FF0066;
+            color: white;
+        }
+        .zebra:hover{
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table_style">
+        <table>
+            <tr>
+                <th>Öğrenci Adı</th>
+                <th>Matematik Notları</th>
+            </tr>
+            <tr>
+                <td>Can</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>İbrahim</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>Hakan</td>
+                <td>76</td>
+            </tr>
+            <tr>
+                <td>Osman</td>
+                <td>35</td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("tr:even").addClass("zebra");
+        });
+    </script>
+
+</body>
+
+</html>

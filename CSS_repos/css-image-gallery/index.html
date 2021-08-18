@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div.gallery{
+            border: 1px solid rgb(236, 216, 216);
+            box-sizing: border-box;
+            margin: 5px;
+        }
+        div.gallery img{
+            width: 100%;
+            height:auto;
+        }
+        div.desc{
+            padding: 15px;
+            text-align: center;
+        }
+        div.gallery:hover{
+            border-color: black;
+        }
+        div.responsive{
+            padding: 0px 6px;
+            width: 25%;
+            float: left;
+            
+        }
+        *{
+            box-sizing: border-box;
+        }
+        div.clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        @media only screen and (max-width:700px){
+            div.responsive{
+                width: 50%;
+            }
+        }
+        @media only screen and (max-width:500px){
+            div.responsive{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="1.jpg">
+                <img src="4.jpg" alt="Yeni 1" width="600" height="400">
+            </a>
+            <div class="desc">
+                Güzel bir resim
+            </div>
+        </div>
+    </div>
+    
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="4.jpg">
+                <img src="4.jpg" alt="Yeni 2" width="600" height="400">
+            </a>
+            <div class="desc">
+                Güzel bir resim
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="3.jpg">
+                <img src="4.jpg" alt="Yeni 3" width="600" height="400">
+            </a>
+            <div class="desc">
+                Güzel bir resim
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="4.jpg">
+                <img src="4.jpg" alt="Yeni 4" width="600" height="400">
+            </a>
+            <div class="desc">
+                Güzel bir resim
+            </div>
+        </div>
+    </div>
+    
+    <div class="clearfix"></div>
+    <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla alias mollitia error consequatur ratione corporis quasi! Possimus explicabo, iure aliquid, eligendi eius officiis minus ducimus atque sunt quidem maxime! Temporibus fuga magni veniam, sequi, excepturi provident repudiandae quia laboriosam atque nisi assumenda doloremque blanditiis eius accusantium cumque molestiae. Corrupti inventore laboriosam aliquid et iure nihil quos? Deserunt suscipit laudantium omnis, perspiciatis veritatis debitis consequatur praesentium ullam, amet, blanditiis iste a dicta? Modi accusamus soluta, veniam, enim voluptas inventore ipsum atque neque ipsa at, cum impedit. Cum veniam nulla totam natus quae officia temporibus architecto amet vel incidunt, odit rem. Nisi.
+    </div>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<title>Document</title>
+	<style type="text/css">
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+			width: 100%;
+			overflow-x: hidden;
+		}
+		.menua{
+			background-color: #cecece;
+			margin:0 5px;
+			width: 150px;
+			text-align: center;
+			color: black;
+			font-size: 0.9rem;
+		}
+		.menua:hover .spa{
+			opacity: 0.7;
+		}
+		.ul{
+			background-color: #f7f7f7;
+		}
+		.foti{
+			width:115px; 
+			height:160px;
+			border-radius: 15px;
+			position: relative;
+			top:20px;
+			border-bottom: 8px solid white
+		}
+		.foti:hover{
+			opacity: 0.6;
+			transition:.5s;
+			cursor: pointer;
+		}
+		.menuimg{
+			width: 50px;
+			height: 50px;
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 11px 15px;
+			margin: 0 7px;
+		}
+		.menuimg:hover{
+			background-color: #cecece;
+		}
+		.mnuimg{
+			width: 12px;
+			margin-right: 5px;
+		}
+		.imza{
+			border:1px solid #cecece;
+			border-left: 7px solid #cecece;
+			box-sizing: border-box;
+			font-size:0.9rem;
+			padding: 20px 40px;
+
+		}
+		@media only screen and (max-width: 970px){
+			.spa{
+				display: none;
+			}
+			.menua{
+				width: 100px;
+				transition: .3s;
+			}
+		}
+		@media only screen and (max-width: 700px){
+			.menua{
+				width: 50px;
+			}
+		}
+		.sagtaraf{
+		
+			height: 5000px;
+			margin-right: 500px;
+			z-index: 1;
+			
+		}
+		.imgmenu{
+			position: absolute;
+			top: 20px;
+			
+			cursor: pointer;
+			display: none;
+			
+		}
+		.imgback{
+			position: absolute;
+			top: 20px;
+			
+			cursor: pointer;
+			
+
+		}
+		.krc{
+			min-width: 88%;
+			position: relative;
+			position: absolute;
+			right: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-0 bg-info sagtaraf p-3 " style="width: 200px;" id="manuu">
+				<img src="img/dd.jpg" style="width: 100px;border-radius: 20px;margin-bottom: 20px;">
+				<ul class="nav flex-column small">
+					<li class="nav-item"><a class="nav-link text-white" href="#">Anasayfa</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="#">Anasayfa</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="#">Anasayfa</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="#">Anasayfa</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="#">Anasayfa</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="#">Anasayfa</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="#">Anasayfa</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="#">Anasayfa</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="#">Anasayfa</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="#">Anasayfa</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="#">Anasayfa</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="#">Anasayfa</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="#">Anasayfa</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="#">Anasayfa</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="#">Anasayfa</a></li>
+					
+				</ul>
+				
+			</div>
+			<div class="col-md-10 krc"  id="sagtaraff">
+				<img class="imgmenu" src="img/menu.png" width="30px" onclick="menuAc();" id="m">
+				<img class="imgback" src="img/back.png" width="30px" onclick="menuKapat();" id="b">
+				<div class="container-fluit mt-5 ">
+
+					<div>
+						<div class="row" >
+							<div class="col-sm-1   offset-1" style="min-width: 150px;">
+								<img class="foti" src="img/dd.jpg">
+							</div>
+							<div class="col-sm-6 offset-1 offset-sm-0">
+								<div class="row mt-4 mb-sm-0 mb-5">
+
+									<div class="col-12 pt-sm-0 pt-3">
+										<span style="font-size: 1.2rem;" class="d-block">Fırat Karaca</span>
+										<span style="font-size: 0.9rem;" class=" small text-muted d-block">Öğrenci</span>
+									</div>
+
+									<div class="col-12 mt-2 ml-2 ">
+										<div class="row">
+											<div class="menuimg">
+												<a href="#"><img src="img/abc.png" width="20px;"></a>
+											</div>
+											<div class="menuimg ">
+												<a href="#"><img src="img/abc.png" width="20px;"></a>
+											</div>
+											<div class="menuimg ">
+												<a href="#"><img src="img/abc.png" width="20px;"></a>
+											</div>
+											<div class="menuimg ">
+												<a href="#"><img src="img/abc.png" width="20px;"></a>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="ul">
+						<div class="pt-4 pb-5 text-left small ">
+							<span class="small">
+								<span class="text-danger offset-sm-2 offset-0">Devamlı Öğrenci</span>, İktisadi ve İdari Bilimler Fakültesi Yönetim Bilişim Sistemleri Programı, 170307025
+							</span>
+						</div>
+
+						<ul class="nav nav-tabs mb-5 offset-xl-2 offset-md-1">
+							<li class="nav-item"><a class="nav-link menua active text-dark " href="#duyurular" data-toggle="tab"><img class="mnuimg" src="img/abc.png"><span class="spa">Duyurular</span></a></li>
+							<li class="nav-item"><a class="nav-link menua text-dark " href="#sinavlar" data-toggle="tab"><img class="mnuimg" src="img/abc.png"><span class="spa">Sınavlar</span> </a></li>
+							<li class="nav-item"><a class="nav-link menua text-dark " href="#notlar" data-toggle="tab"><img class="mnuimg" src="img/abc.png"><span class="spa">Notlar</span></a></li>
+							<li class="nav-item"><a class="nav-link menua text-dark " href="#yoksis" data-toggle="tab"><img class="mnuimg" src="img/abc.png"><span class="spa">YÖKSİS</span></a></li>
+							<li class="nav-item"><a class="nav-link menua text-dark" href="#dbs" data-toggle="tab"><img class="mnuimg" src="img/abc.png"><span class="spa">DBS</span></a></li>
+						</ul>
+					</div>
+					<div class="tab-content p-md-5">
+						<div class="tab-pane active" id="duyurular">
+							<div class="container-fluid">
+								<div class="row mb-3">
+									<div class="col-12 imza">
+										<div class="row">
+											<div class="offset-lg-4 offset-md-3 offset-sm-2 offset-sm-0"></div>
+											<div class="col-4">
+												<img class="img-thumbnail" src="img/adana.jpg" style="min-width: 400px;">
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row mb-3">
+									<div class="col-12 imza ">
+										<b class="d-block">Değerli öğrencimiz;</b>
+										<b>2021-2022 eğitim öğretim yılından itibaren yüksek lisans programlarına yapılacak başvurularda adaylardan yabancı dil puanı olarak en az 50 puan istenecektir.</b>
+									</div>
+								</div>	
+
+								<div class="row mb-3">
+									<div class="col-12 imza ">
+										<b class="d-block">2020-2021 Erasmus, Mevlana ve Farabi Programları Çağrısı,</b>
+										<span class="text-muted d-block mt-4 mb-4">
+											Dış İlişkiler Ofisi bünyesinde faaliyet gösteren Erasmus+, Mevlana ve Farabi Değişim Programları takvimi belirlenmiştir. Değişim programları hakkında bilgi almak için çağrı posterini inceleyebilir ya da aşağıdaki mail adresleri ile iletişime geçebilirsiniz. Dış İlişkiler Ofisi bünyesinde yürütülen program fırsatlarını kaçırmamak için sosyal medya hesaplarını takip edebilirsiniz.
+										</span>
+										<span class="text-muted d-block">Erasmus: erasmus@atauni.edu.tr</span>
+										<span class="text-muted d-block">Farabi: farabi@atauni.edu.tr</span>
+										<span class="text-muted d-block">Mevlana: mevlana@atauni.edu.tr</span>
+									</div>
+								</div>	
+
+								<div class="row mb-3">
+									<div class="col-12 imza alert-primary">
+										<b class="d-block">Sevgili Öğrenciler,</b>
+										<b><em>Seçmeli ders havuzundan "Toplumsal Duyarlılık Projeleri" dersini seçerek hem uygulamalı bir ders almış hem de Üniversitemiz tarafından desteklenecek sosyal sorumluluk projelerinde yer alma fırsatını yakalamış olacaksınız. Bilgi için lütfen danışmanlarınıza veya Toplumsal Duyarlılık Merkezine başvurunuz.</em></b>
+										<span class="text-muted d-block">İletişim</span>
+										<span class="text-muted d-block">tdm.atauni.edu.tr</span>
+										<span class="text-muted d-block">0442 231 6106</span>
+									</div>
+								</div>	
+
+								<div class="row mb-3">
+									<div class="col-12 imza alert-warning ">
+										<b>
+											Cumhurbaşkanlığı İnsan Kaynakları Ofisi, öğrenci ve mezunların nitelikli istihdamına katkı sağlamak amacıyla bir internet platformu olan 'Yetenek Kapısı'nı üniversitelerin hizmetine sunmuştur. 'Yetenek Kapısı' platformu gençler ve işverenlerin sürekli iletişimde kalabilmelerini sağlamaktadır. Öğrenciler ve mezunlar, 'Yetenek Kapısı'nda profil oluşturarak işverenlere daha kolay ulaşabilecek, Kariyer Merkezleri ve 'Yetenek Kapısı' üzerinden öğrenci ve işveren arasındaki iletişim sürekli takip edilebilecektir. Siz öğrencilerimizin de bu platforma üye olmasını beklemekteyiz.
+											<span class="d-block">https://beta.yetenekkapisi.org/login</span>
+										</b>
+									</div>
+								</div>	
+
+								<div class="row mb-3">
+									<div class="col-12 imza alert-danger">
+										<b>Online harç ödemesi yapmak için tıklayınız</b>
+									</div>
+								</div>
+
+								<div class="row mb-3">
+									<div class="col-12 imza ">
+										<b class="d-block ">Kütüphane Daire Başkanlığı</b>
+										<p class="text-muted">-Değerli kullanıcılarımız sol menüde yer alan Kişisel Bilgiler -> Kütüphane modülü ile "Ödünç Kitap", "Borç", "Ceza" ve v.b. bilgilerinizi görebilirsiniz...
+										</p>
+										<p class="text-muted">
+											-Sevgili Öğrenciler, Kütüphane Okuma Salonumuz öğrenci işleri daire başkanlığı yanında hizmete açılmıştır.
+										</p>
+									</div>
+								</div>	
+
+								<div class="row mb-3">
+									<div class="col-12 imza ">
+										<b class="d-block">Öğrenci Bilgi Sistemimize, yüz yüze eğitime destek amacıyla Ders Bilgi Sistemi (DBS) entegre edilmiştir.</b>
+										<p class="text-muted">
+											Ders Bilgi Sistemi elektronik öğrenme uygulamalarında ihtiyaç duyulabilecek etkinliklerin çoğunu fazlasıyla yerine getirebilecek özelliklere sahip bir ders yönetim sistemidir. DBS ile geleneksel (yüz-yüze) yapılan öğretimin yeni teknolojilerle ve uzaktan eğitimin çeşitli modellerinin birleştirilmesini, sınıf içi öğrenme ile İnternet teknolojisinin bütünleştirilmesini web desteğiyle sağlayabilirsiniz.
+										</p>
+										<p class="text-muted">
+											Ders Bilgi Sistemi öğretim üyesi ve öğrenci tarafından kolayca kullanılabilmektedir.
+										</p>
+										<a href="#" style="color: red;">Kullanım kılavuzu</a>
+										<p><span style="color: red;" >ATA-BAUM</span> 2023 Gün 4 saat 53 dakika</p>
+									</div>
+								</div>		
+							</div>
+
+						</div>
+						<div class="tab-pane" id="sinavlar">
+							<h1 class="text-danger">Sınavlar</h1>
+						</div>
+						<div class="tab-pane" id="notlar">
+							<h1 class="text-primary">Notlar</h1>
+						</div>
+						<div class="tab-pane" id="yoksis">
+							<h1 class="text-warning">YÖKSİS</h1>
+						</div>
+						<div class="tab-pane" id="dbs">
+							<h1 class="text-success">DBS</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function menuKapat(){
+			document.getElementById("manuu").style.display="none";
+			document.getElementById("sagtaraff").style.width="100%";
+			document.getElementById("b").style.display="none";
+			document.getElementById("m").style.display="block";
+
+		}
+		function menuAc(){
+			document.getElementById("manuu").style.display="block";
+			document.getElementById("m").style.display="none";
+			document.getElementById("b").style.display="block";
+			document.getElementById("sagtaraff").style.width="100%";
+			document.getElementById("m").style.transition=".9s";
+		}
+	</script>
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

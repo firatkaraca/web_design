@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="can"></p>
+    <script>
+        // var x=0.2+0.1;
+        // var y=((0.2*10)+(0.1*10))/10;
+        // document.getElementById("can").innerHTML=x;
+        // document.write(y);
+
+        var sayi=2;
+        var txt="";
+        while(sayi!=Infinity){
+            sayi=sayi*sayi;
+            txt=txt+sayi+"<br>";
+        }
+        document.write(txt+"<br>");
+        document.getElementById("can").innerHTML=txt;
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <style>
+        #myColor{
+            padding: 7px 15px;
+            width: 120px;
+            height: 40px;
+        }
+        input[type='button']{
+            padding: 10px;
+            height: 40px;
+            background-color: maroon;
+            color: white;
+            border-radius: 0;
+            border:none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <select name="" id="myColor">
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Green">Green</option>
+    </select>
+    <input type="button" value="Tüm seçenekleri sil" onclick="Remove_options()">
+
+    <script>
+        function Remove_options(){
+            $('#myColor').empty().append('<option selected="selected" value="black">Black</option>');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <style>
+        p.center{
+            text-align: center;
+            color: blue;
+        }
+        p.large{
+            font-size:200%;
+        }
+    </style>
+</head>
+<body>
+    <p class="center large">Bu paragrafta 2 tane css property si var</p>
+    <input onclick="remove_classes()" type="button" value="Cssleri kadlırmak için tıklayınız">
+    <script>
+        function remove_classes(){
+            $('p').removeClass();
+        }
+    </script>
+</body>
+</html>

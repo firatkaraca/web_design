@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.tab div{
+            display: none;
+        }
+        .tab div:target{
+            display: block;
+            border: 1px solid blue;
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 15px;
+
+        }
+    </style>
+</head>
+<body>
+   <div class="tab">
+       <a href="#Link1">Link1</a>
+       <a href="#Link2">Link2</a>
+       <a href="#Link3">Link3</a>
+
+       <div id="Link1">
+           <h1>Hello</h1>
+       </div>
+       <div id="Link2">
+           <h1>World</h1>
+       </div>
+       <div id="Link3">
+           <h1>Merhaba Dünya</h1>
+       </div>
+   </div>
+</body>
+</html>

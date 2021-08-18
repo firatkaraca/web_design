@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <style>
+        textarea {
+            display: block;
+        }
+
+        #a {
+            border: 1px solid red;
+            padding: 20px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="a"></p>
+    <br><br><br>
+    <label>Maximum 15 karakter</label>
+    <textarea id="textaream" maxlength="15"></textarea>
+    <span id="kalankarakter">15</span> karakter kaldı.
+
+
+    <script>
+        var maxLenght = 15;
+
+        $('#textaream').keyup(function () {
+            var karaktersayisi = maxLenght - $(this).val().length;
+            $('#kalankarakter').text(karaktersayisi);
+        });
+
+
+        a();
+        function a() {
+            $(document).ready(function () {
+                $('#textaream').keyup(function () {
+                    $('#a').html($(this).val());
+                    $('#a').css({ 'outline': '1000px double red', 'transition': '.9s', 'margin': '350px 600px' });
+                });
+            });
+        };
+
+    </script>
+
+</body>
+
+</html>

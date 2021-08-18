@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <style>
+        #btnKucult {
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            font-size: 40px;
+            border: 5px double transparent;
+            border-radius: 100%;
+            width: 70px;
+            height: 70px;
+        }
+        #btnBuyult {
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+            font-size: 40px;
+            border: 5px double transparent;
+            border-radius: 100%;
+            width: 70px;
+            height: 70px;
+        }
+        img {
+            display: block;
+        }
+        .border{
+            border: 5px double black
+        }
+    </style>
+</head>
+<body>
+    <button id="btnKucult">-</button>
+    <button id="btnBuyult">+</button>
+    <p id="yazi">kdkd</p>
+    <img src="bozlogo.jpg" height="200">
+
+    <script>
+        $("img").addClass("border");
+        $("#yazi").text("Resim yüksekliği : "+($("img").attr("height")));
+        $(document).ready(function () {
+            $("#btnKucult").click(function () {
+                $("img").attr("height", function (n, v) {
+                    $("#btnKucult").css("border","5px double white");
+                    $("#yazi").text("Resim yüksekliği : "+$("img").attr("height"));
+                    return v * 0.9;
+                });
+            });
+        });
+        $(document).ready(function () {
+            $("#btnBuyult").click(function () {
+                $("img").attr("height", function a(n, v) {
+                    $("#btnBuyult").css("border","5px double white");
+                    $("#yazi").text("Resim yüksekliği : "+$("img").attr("height"));
+                    return v * 1.1;
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>

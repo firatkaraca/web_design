@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Style</title>
+    <style>
+        p.dotted{
+            border-style: dotted;
+            border-width: thick;
+        }
+        p.dashed{
+            border-style: dashed;
+            border-width: 5px;
+        }
+        p.solid{
+            border-style: solid;
+        }
+        p.double{
+            border-style: double;
+            border-width: 5px 12px 7px 19px;
+        }
+        p.groove{
+            border-style: groove;
+        }
+        p.ridge{
+            border-style: ridge;
+        }
+        p.inset{
+            border-style: inset;
+        }
+        p.outset{
+            border-style: outset;
+        }
+        p.none{
+            border-style: none;
+        }
+        p.hidden{
+            border-style: hidden;
+        }
+        p.mix{
+            border-style: dotted dashed double solid;
+        }
+        p.can{
+            border-top-style:dotted;
+            border-right-style: none;
+            border-bottom-style: dotted;
+            border-left-style: none;
+        }
+        p.canan{
+            border: 5px inset red;
+        }
+        p.kitap{
+            border-left: 5px solid red;
+            border-right: 15px double red;
+            border-top: 7px dotted blue;
+            border-bottom: 5px dashed aqua;
+        }
+        p.radius{
+            border:5px solid blue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Border Style</h1>
+
+    <p class="dotted">Dotted (Noktalı) Border</p>
+    <p class="dashed">Dashed (Çizgili) Border</p>
+    <p class="solid">Solid (Katı) Border</p>
+    <p class="double">Double (Çift) Border</p>
+    <p class="groove">Groove (Oluk) Border</p>
+    <p class="ridge">Ridge (Çıkıntı) Border</p>
+    <p class="inset">Inset (Ek) Border</p>
+    <p class="outset">Outset (Başlangıç) Border</p>
+    <p class="none">None (Yok) Border</p>
+    <p class="hidden">Hidden(Gizlenmiş) Border</p>
+    <p class="mix">Mix (Karıştırılmış) Border ---> 4 Tane Saat Yönünde</p>
+    <p class="can">Farklı Border Çeşitleri</p>
+    <p class="canan">Tümü tek satırda</p>
+    <p class="kitap">Farklı Farklı Border</p>
+    <p class="radius">Border Radius</p>
+</body>
+</html>

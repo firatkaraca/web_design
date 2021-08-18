@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.header{
+            text-align: center;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        div.nav{
+            overflow: hidden;
+            background-color: black;
+        }
+        div.nav a{
+            padding: 15px 17px;
+            float: left; 
+            text-decoration: none;
+            color: white;
+            
+        }
+        div.nav a:hover{
+            background-color: grey;
+        }
+        .column{
+            box-sizing: border-box;
+            padding: 15px;
+            float: left;
+        }
+        .column.side{
+            width: 25%;
+        }
+        .column.middle{
+            width: 50%;
+        }
+        div.row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        div.footer{
+            text-align: center;
+            background-color:#f1f1f1;
+            padding: 15px 12px;
+        }
+
+@media only screen and (max-width: 600px){
+    .column.side{
+        width: 100%;
+    }
+    .column.middle{
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Header</h1>
+        <p>Resize the browser window to see the responsive effect.</p>
+    </div>
+    <div class="nav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+    <div class="row">
+        <div class="column side">
+            <h2>Side</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="column middle">
+            <h2>Main Content</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto beatae non ad incidunt mollitia ducimus quasi, corporis nulla. Labore cumque, incidunt rerum necessitatibus velit deserunt quia corporis voluptate veritatis officia autem eaque placeat laudantium exercitationem quos soluta! Quae deserunt minus sit unde quidem nisi similique, modi molestiae! Corporis, fugit dolorum?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto beatae non ad incidunt mollitia ducimus quasi, corporis nulla. Labore cumque, incidunt rerum necessitatibus velit deserunt quia corporis voluptate veritatis officia autem eaque placeat laudantium exercitationem quos soluta! Quae deserunt minus sit unde quidem nisi similique, modi molestiae! Corporis, fugit dolorum?
+            </p>
+        </div>
+        <div class="column side">
+            <h2>Side</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+</body>
+</html>

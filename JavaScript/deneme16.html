@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <style>
+        table tr th,table tr td{
+            border: 1px solid black;
+            padding: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <table id="label">
+        <tr>
+            <th>Tools</th>
+            <th>Description</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>Php My Admin</td>
+                <td>Third party, Free, Web based</td>
+            </tr>
+            <tr>
+                <td>Php My Admin</td>
+                <td>Third party, Free, Web based</td>
+            </tr>
+            <tr>
+                <td>Php My Admin</td>
+                <td>Third party, Free, Web based</td>
+            </tr>
+            <tr>
+                <td>Php My Admin</td>
+                <td>Third party, Free, Web based</td>
+            </tr>
+            <tr>
+                <td>Php My Admin</td>
+                <td>Third party, Free, Web based</td>
+            </tr>
+            <tr>
+                <td>Php My Admin</td>
+                <td>Third party, Free, Web based</td>
+            </tr>
+            <tr>
+                <td>Php My Admin</td>
+                <td>Third party, Free, Web based</td>
+            </tr>
+            <tr>
+                <td>Php My Admin</td>
+                <td>Third party, Free, Web based</td>
+            </tr>
+            <tr>
+                <td>Php My Admin</td>
+                <td>Third party, Free, Web based</td>
+            </tr>
+            <tr>
+                <td>Php My Admin</td>
+                <td>Third party, Free, Web based</td>
+            </tr>
+            <tr>
+                <td>Php My Admin</td>
+                <td>Third party, Free, Web based</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        $.fn.rowCount=function(){
+            return $('tr',$(this).find('tbody')).length;
+        };
+        $.fn.columnCount=function(){
+            return $('th', $(this).find('tbody')).length;
+        };
+
+        var rowNumber=$('#table1').rowCount();
+        var columnNumber=$('#table1').columnCount();
+        
+        document.write("Satır"+rowNumber+" Sütun"+columnNumber);
+    </script>
+
+</body>
+</html>

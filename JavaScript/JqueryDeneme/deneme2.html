@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <style>
+        div.flex {
+            display: flex;
+        }
+
+        div.flex-left {
+            max-width: 20%;
+            flex: 20%;
+            min-width: 300px;
+            min-height: 1000px;
+            background-color: #425480;
+        }
+
+        .deneme {
+            display: none;
+        }
+
+        div.flex-left a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 15px 25px;
+            background-color: #425480;
+
+        }
+        div.flex-left img{
+            margin: 10px;
+            border-radius: 50%;
+            height: 150px;
+            width: 100px;
+            cursor: pointer;
+        }
+        div.flex-left img:hover{
+            opacity: 0.8;
+        }
+        div.flex-left a:hover {
+            opacity: 0.9;
+        }
+
+        div.flex-right {
+            max-width: 100%;
+            flex: 80%;
+            background-color: thistle;
+            padding: 20px;
+        }
+
+        div.flex-right img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        div.flex-right img:hover {
+            transform: scaleY(0.9);
+            transition: .9s;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="flex-left deneme" id="can">
+            <img src="bozlogo.jpg" alt="">
+            <a href="">Anasayfa</a>
+            <a href="">Anasayfa</a>
+            <a href="">Anasayfa</a>
+            <a href="">Anasayfa</a>
+            <a href="">Anasayfa</a>
+            <a href="">Anasayfa</a>
+            <a href="">Anasayfa</a>
+            <a href="">Anasayfa</a>
+
+        </div>
+        <div class="flex-right">
+            <img id="manu" src="menu.png" onclick="acilirMenu()">
+            <h1>ANASAYFA</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorum ea quasi a hic. Obcaecati,
+                commodi? Recusandae deleniti libero exercitationem, reprehenderit odit rem voluptatum eaque qui,
+                dolorum, aperiam commodi similique.</p>
+            <h1>ANASAYFA</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorum ea quasi a hic. Obcaecati,
+                commodi? Recusandae deleniti libero exercitationem, reprehenderit odit rem voluptatum eaque qui,
+                dolorum, aperiam commodi similique.</p>
+            <h2>MENÜLER</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorum ea quasi a hic. Obcaecati,
+                commodi? Recusandae deleniti libero exercitationem, reprehenderit odit rem voluptatum eaque qui,
+                dolorum, aperiam commodi similique.</p>
+
+            <img src="bozlogo.jpg" alt="" style="width: 100%;">
+        </div>
+    </div>
+
+    <script>
+        $("#manu").click(function () {
+            // document.getElementById("manu").src="back.png";
+            if ($("#manu").attr("src") == "menu.png") {
+                $("#manu").attr("src", "back.png");
+            }
+            else {
+                $("#manu").attr("src", "menu.png");
+            }
+            $("#can").toggleClass("deneme");
+        });
+
+
+    </script>
+
+</body>
+
+</html>

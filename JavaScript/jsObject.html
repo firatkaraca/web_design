@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="can"></p>
+    <p id="canan"></p>
+    <script>
+        var person = {
+            ad: "can",
+            soyad: "boz",
+            yas: 21,
+            fulname:function(){
+                return this.ad+" "+this.soyad;
+            }
+        };
+        document.getElementById("can").innerHTML = "İsim = " + person.ad + " Soyisim = " + person.soyad + " Yaş = " + person.yas;
+
+
+        document.getElementById("canan").innerHTML=person.fulname();
+    </script>
+</body>
+
+</html>

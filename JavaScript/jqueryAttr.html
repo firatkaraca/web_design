@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <style>
+        img{
+            display: block;
+            border: 1px solid black;
+        }
+        button{
+            padding: 10px 30px;
+            background-color: blue;
+            color: white;
+            border: none;
+            font-size: 17px;
+        }
+        button:hover{
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img src="img/bozlogo.jpg" width="284" height="450">
+    <br>
+    <button type="button" >Genişliği ve yüksekliği değiştir</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("img").attr("height",function(n,v) {
+                    return v-50;
+                });
+                alert("Image Genişliği : "+$("img").attr("height"));
+            });
+        });
+    </script>
+</body>
+</html>

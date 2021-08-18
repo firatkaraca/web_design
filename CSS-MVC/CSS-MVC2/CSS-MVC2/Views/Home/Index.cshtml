@@ -1,0 +1,111 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<html>
+<head>
+    <title>flex</title>
+    <style>
+        * {
+           
+        }
+        body{
+            margin:0;
+        }
+        .header {
+            text-align: center;
+            padding: 40px;
+            background-color: darkslategrey;
+            margin-bottom:10px;
+            color:white;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: gainsboro;
+            padding: 3px 10px 10px 10px;
+            
+        }
+        .column {
+            flex: 25%;
+            max-width: 25%;
+            height: auto;
+        }
+        .column img{
+           width:100%;
+           margin-top:10px; 
+           border:3px solid gainsboro;
+           padding:5px;
+        }
+        img:hover{
+           border:3px solid darkslategrey;           
+        }
+        .footer {
+            padding: 70px;
+            background-color: darkslategrey;
+            width:100%;
+            text-align:center;
+            color:white;
+            font-size:18px;
+            margin-top:10px;
+
+        }
+        @@media screen and (max-width:800px){
+            .column{
+                max-width:50%;
+                flex:50%;
+            }
+        }
+        @@media screen and (max-width:600px) {
+            .column{
+                max-width: 100%;
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Flexbox ile image gallery</h1>
+        <p>Flexboxın gücünü görelim</p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="~/img/resimler/ağaç.jpg" />
+            <img src="~/img/resimler/altköprü.jpg" />
+            <img src="~/img/resimler/araba.jpg" />
+            <img src="~/img/resimler/askı.jpg" />
+            <img src="~/img/resimler/ırmak.jpg" />
+            <img src="~/img/resimler/şehir.jpg" />
+        </div>
+        <div class="column">
+            <img src="~/img/resimler/buğday.jpg" />
+            <img src="~/img/resimler/bulanık.jpg" />
+            <img src="~/img/resimler/bulut.jpg" />
+            <img src="~/img/resimler/çatal.jpg" />
+            <img src="~/img/resimler/köprü.jpg" />
+            <img src="~/img/resimler/yıldız.jpg" />
+        </div>
+        <div class="column">
+            <img src="~/img/resimler/çember.jpg" />
+            <img src="~/img/resimler/dağ.jpg" />
+            <img src="~/img/resimler/dalga.jpg" />
+            <img src="~/img/resimler/deniz.jpg" />
+            <img src="~/img/resimler/kurt.jpg" />
+            <img src="~/img/resimler/ağaç.jpg" />
+        </div>
+        <div class="column">
+            <img src="~/img/resimler/desen.jpg" />
+            <img src="~/img/resimler/doğa.jpg" />
+            <img src="~/img/resimler/göl.jpg" />
+            <img src="~/img/resimler/gözlük.jpg" />
+            <img src="~/img/resimler/simetri.jpg" />
+            <img src="~/img/resimler/altköprü.jpg" />
+        </div>
+
+    </div>
+    <div class="footer">
+        <p>Image</p>
+    </div>
+</body>
+</html>

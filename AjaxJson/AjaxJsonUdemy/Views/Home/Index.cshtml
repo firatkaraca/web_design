@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JSON</title>
+</head>
+<body>
+    <h1>Json Öğreniyoruz</h1>
+    <p id="can"></p>
+    <img src="" alt="" id="a"/>
+    <script type="text/javascript">
+        var data = '{"results":[{"gender":"male","name":{"title":"Mr","first":"Milton","last":"Davidson"},"location":{"street":{"number":8773,"name":"Country Club Rd"},"city":"Tweed","state":"New South Wales","country":"Australia","postcode":5404,"coordinates":{"latitude":"-86.2386","longitude":"-138.1341"},"timezone":{"offset":"+3:00","description":"Baghdad, Riyadh, Moscow, St. Petersburg"}},"email":"milton.davidson@example.com","login":{"uuid":"b38e2e32-6e24-4cd3-be3a-5dcc85a31a86","username":"blueostrich394","password":"tripleh","salt":"A3jsU2mn","md5":"08b85b5f8176cdeb59196e9d847a71e6","sha1":"72a9bb86b93ca008d39261350693dc51cb9b496d","sha256":"66df42876eda8db869d091c07f3c4d61a7ecdcc4ac6d3021f03d109e19c5e1fa"},"dob":{"date":"1990-05-01T05:03:46.751Z","age":31},"registered":{"date":"2015-06-15T11:07:24.319Z","age":6},"phone":"05-3621-6541","cell":"0466-843-534","id":{"name":"TFN","value":"204785678"},"picture":{"large":"https://randomuser.me/api/portraits/men/80.jpg","medium":"https://randomuser.me/api/portraits/med/men/80.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/80.jpg"},"nat":"AU"}],"info":{"seed":"c6080454eb29b90b","results":1,"page":1,"version":"1.3"}}';
+        
+
+        var dataJSON = JSON.parse(data);
+        var person = dataJSON.results[0];
+
+        document.getElementById("can").innerHTML = person.name.first;
+        document.getElementById("a").src = person.picture.large;
+        console.log(person);
+    </script>
+
+</body>
+</html>
+
+

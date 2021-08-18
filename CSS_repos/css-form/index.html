@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text]{
+           
+            padding: 12px 15px 12px 50px;
+            margin: 18px 0;
+            width: 50%;
+            border: 3px solid red;
+            box-sizing: border-box;
+            border-radius: 40px;
+            background-image:url("search.png");
+            background-repeat: no-repeat;
+            background-position: left;
+            
+            color: white;
+            background-position: 10px;
+            
+            
+        }
+        input[type=text]:focus{
+            background-color: darkmagenta;
+            outline: none;
+            width: 80%;
+            
+        }
+
+        textarea{
+            width: 100%;
+            height: 160px;
+            border:3px solid red;
+            font-size: 20px;
+            resize:none;
+            box-sizing: border-box;
+        }   
+        select{
+            width: 100%;
+            padding: 10px 15px;
+            border:1px solid red;
+            border-radius: 5px;
+            background-color:cornsilk;
+        }
+        input[type=button],input[type=reset],input[type=submit]{
+            padding: 15px 25px;
+            background-color: greenyellow;
+            border:none;
+            color: white;
+            margin: 5px 3px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="can">Adınızı giriniz:</label>
+        <input type="text" name="can" placeholder="First name"><br>
+        <label for="boz">Soyadınızı giriniz:</label>
+        <input type="text" name="boz" placeholder="Last name"><br>
+        <textarea placeholder="Merhaba">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, officia sunt. Dolores vero asperiores et consequatur quibusdam sint mollitia. Itaque deleniti veritatis impedit quo obcaecati placeat nihil vitae natus quasi excepturi labore inventore molestias pariatur exercitationem unde laudantium quis ea, optio dolores totam. Odit iste optio adipisci repellat sunt vero saepe nulla doloremque, nam autem? Cumque saepe quo minus impedit nam obcaecati cupiditate dolorem iusto enim voluptatum. Sint tempora nisi accusantium fugiat maxime quos modi est error excepturi sapiente, laudantium architecto perferendis dolore consequuntur consectetur rem impedit. Tenetur iusto totam officiis vero quis nobis praesentium eos asperiores, voluptatum esse pariatur.</textarea>
+        
+        <select name="ulke">
+            <option value="tr">Türkiye</option>
+            <option value="fr">Français</option>
+            <option value="en">England</option>
+        </select>
+        <input type="button" value="Button">
+        <input type="reset">
+        <input type="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<title>Document</title>
+	<style type="text/css">
+		#can a{
+			color: white;font-size: 0.9rem;
+		}
+		#can a:hover{
+			color: #f2f2f2;
+
+		}
+		.fotoTop{
+			width: 50%;
+			
+		}
+		.fotoTop img{
+			border-radius: 100%;
+			margin-top: 2rem;
+			
+
+		}
+		.fotoTop img:hover{
+			opacity: 0.7;
+			transition: .9s;
+		}
+		.sayfa{
+			display: flex;
+		}
+		.solMenu{
+			transition: .9s;
+		}
+		.icon:hover{
+			transform: scaleY(1.1);
+			cursor: pointer;
+			transition: .9s;
+		}
+		.icon{			
+			box-sizing: border-box;
+		}
+		.toggler{
+			position: absolute;
+			right: 2rem;
+			top: 0.7rem;
+		}
+		.nav-link{
+			position: relative;
+		}
+		@media only screen and (max-width: 800px){
+			.solMenu{
+				position: absolute;
+				z-index: 1;
+			}
+			#menuPng{
+				position: relative;
+				left: 15rem;
+				
+			}
+		}
+
+
+  	
+	</style>
+</head>
+<body>
+	<div class="sayfa">
+
+
+		<ul class="nav flex-column bg-dark pl-2 solMenu " style="min-width:15rem;max-width: 15%;height: 2000px;" id="can">
+
+			<div class="fotoTop">
+				<img class="ml-3 mb-3" src="img/dd.jpg" style="width: 100%; ">
+			</div>
+			
+			<li class="nav-item">
+
+				<a class="nav-link" data-toggle="collapse" href="#anasayfa">Anasayfa <img class="toggler" src="img2/plus.png" style="width:1rem;"></a>
+				<div class="collapse" id="anasayfa">
+					<a class="nav-link pl-5" href="">Son Dakika</a>
+					<a class="nav-link pl-5" href="">Haberler</a>
+					<a class="nav-link pl-5" href="">Magazin</a>
+				</div>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="collapse" href="#demo">Hakkımızda <img class="toggler" src="img2/plus.png" style="width:1rem;"></a>
+				<div class="collapse" id="demo">
+					<a class="nav-link pl-5" href="">Blog</a>
+					<a class="nav-link pl-5" href="">Misyon</a>
+					<a class="nav-link pl-5" href="">Vizyon</a>
+				</div>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="collapse" href="#blog">Blog <img class="toggler" src="img2/plus.png" style="width:1rem;"></a>
+				<div class="collapse" id="blog">
+					<a class="nav-link pl-5" href="">a</a>
+					<a class="nav-link pl-5" href="">b</a>
+					<a class="nav-link pl-5" href="">c</a>
+					<a class="nav-link pl-5" href="">d</a>
+					<a class="nav-link pl-5" href="">e</a>
+					<a class="nav-link pl-5" href="">f</a>
+					<a class="nav-link pl-5" href="">g</a>
+					<a class="nav-link pl-5" href="">h</a>
+					<a class="nav-link pl-5" href="">ı</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="collapse" href="#kariyer">Kariyer<img class="toggler" src="img2/plus.png" style="width:1rem;"></a>
+				<div class="collapse" id="kariyer">
+					<a class="nav-link pl-5" href="">Kimlik</a>
+					<a class="nav-link pl-5" href="">Okul</a>
+					<a class="nav-link pl-5" href="">İş</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="collapse" href="#iletisim">İletişim<img class="toggler" src="img2/plus.png" style="width:1rem;"></a>
+				<div class="collapse" id="iletisim">
+					<a class="nav-link pl-5" href="">E-posta</a>
+					<a class="nav-link pl-5" href="">Adres</a>
+					<a class="nav-link pl-5" href="">Künye</a>
+				</div>
+			</li>
+			
+			<li class="nav-item"><a class="nav-link" href="">Çıkış</a></li>
+		</ul>
+
+
+
+		<div class="p-2 sagMenu bg-white" >
+			<img class="icon" src="img2/menu.png" style="width: 1.5rem;" onclick="acilirMenu()" id="menuPng">
+			<img class="icon" src="img2/back.png" style="width: 1.5rem;display: none;" onclick="kapanirMenu()" id="backPng">
+			<br><br>
+
+
+			<ul class="nav nav-tabs">
+				<li class="nav-item mr-3 alert-success">
+					<a class="nav-link" href="#home" data-toggle="tab">Anasayfa</a>
+				</li>
+				<li class="nav-item mr-3 alert-danger">
+					<a class="nav-link" href="#sınavlar" data-toggle="tab">Sınavlar</a>
+				</li>
+				<li class="nav-item mr-3 alert-primary">
+					<a class="nav-link" href="#notlar" data-toggle="tab">Notlar</a>
+				</li>
+				<li class="nav-item mr-3 alert-warning">
+					<a class="nav-link" href="#ubys" data-toggle="tab">UBYS</a>
+				</li>
+				<li class="nav-item mr-3 alert-secondary">
+					<a class="nav-link" href="#dbs" data-toggle="tab">DBS</a>
+				</li>
+			</ul>
+
+			<div class="tab-content">
+				<div class="tab-pane" id="home">
+					<h1>Home</h1>
+				</div>
+				<div class="tab-pane active" id="sınavlar">
+					<div class="container">
+						<h1>Sınavlar</h1>
+
+						<table class="table table-striped table-hover ">
+							<thead class="">
+								<tr>
+									<th>ID</th>
+									<th>Ders Adı</th>
+									<th>Sınav Türü</th>
+									<th>Tarih</th>
+									<th>Saat</th>
+									<th>Tür</th>
+									<th>Etki Oranı</th>
+									<th>Not</th>
+									<th>Harf Notu</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Matematik</td>
+									<td>Vize</td>
+									<td>20.20.2020</td>
+									<td>13:45</td>
+									<td>Agno</td>
+									<td>40</td>
+									<td>71</td>
+									<td>BA</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Matematik</td>
+									<td>Vize</td>
+									<td>20.20.2020</td>
+									<td>13:45</td>
+									<td>Agno</td>
+									<td>40</td>
+									<td>71</td>
+									<td>BA</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Matematik</td>
+									<td>Vize</td>
+									<td>20.20.2020</td>
+									<td>13:45</td>
+									<td>Agno</td>
+									<td>40</td>
+									<td>71</td>
+									<td>BA</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Matematik</td>
+									<td>Vize</td>
+									<td>20.20.2020</td>
+									<td>13:45</td>
+									<td>Agno</td>
+									<td>40</td>
+									<td>71</td>
+									<td>BA</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+
+				</div>
+				<div class="tab-pane" id="notlar">
+					<h1>Notlar</h1>
+				</div>
+				<div class="tab-pane" id="ubys">
+					<h1>UBYS</h1>
+				</div>
+				<div class="tab-pane" id="dbs">
+					<h1>DBS</h1>
+				</div>
+			</div>
+
+
+
+
+
+
+
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function acilirMenu(){
+			document.getElementById("can").style.display="none"
+			document.getElementById("menuPng").style.display="none"
+			document.getElementById("backPng").style.display="block"
+		}
+
+		function kapanirMenu(){
+			document.getElementById("can").style.display="block"
+			document.getElementById("can").style.transition=".9s"
+			document.getElementById("backPng").style.display="none"
+			document.getElementById("menuPng").style.display="block"
+		}
+	</script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
